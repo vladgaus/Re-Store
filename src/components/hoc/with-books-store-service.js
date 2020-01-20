@@ -1,5 +1,5 @@
-import React from "react";
-import BookStoreServiceConsumer from '../hoc';
+import React from 'react';
+import {BookStoreServiceConsumer} from '../bookstore-service-context';
 
 const withBookStoreService = (fn) => (Wrapped) => {
     return (props) => {
@@ -20,4 +20,6 @@ const withBookStoreService = (fn) => (Wrapped) => {
     }
 };
 
-export default withBookStoreService;
+export {
+    withBookStoreService
+};

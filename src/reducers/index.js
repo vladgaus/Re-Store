@@ -1,5 +1,9 @@
 const initialState = {
-    books: []
+    books: [{
+        id: 1,
+        title: 'test',
+        author: 'name'
+    }]
 }
 
 const reducer = (state = initialState, action) => {
